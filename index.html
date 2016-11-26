@@ -1,0 +1,30 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Horror Audio</title>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     <a-assets>
+     <img id="img71" src="img71.gif">
+     <img id="img74" src="img74.png">
+     <img id="img75" src="img75.png">
+     <img id="img76" src="img76.png">
+     <img id="img77" src="img77.png">
+     </a-assets>
+     <a-sound src="src: url(moz.mp3)" autoplay loop="true" volume="100" position="0 2 5"></a-sound>
+     <a-entity>
+     </a-entity>
+     <a-sphere position="1 2 -4" radius="0.4" src="#img71">
+     <a-animation attribute="rotation" repeat="indefinite" dur="20000" to="0 360 0"></a-animation>
+     </a-sphere> 
+     <a-image position="-3 0 -5" width="2" height="2" src="#img77">
+	 <a-animation attribute="rotation" repeat="indefinte" dur="25000" to="0 360 0"></a-animation></a-image>
+     <a-image position="-5 10 -10" height="15" width="17" src="#img76"></a-image>
+     <a-image position="4 0 -4" height="3" width="4" src="#img75">
+     <a-animation attribute="rotation" repeat="indefinte" dur="25000" to="0 360 0"></a-animation></a-image>
+     <a-sky src="#img74"></a-sky>
+    </a-scene>
+  </body>
+</html>
